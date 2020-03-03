@@ -1,12 +1,15 @@
 version: 0.1
 phases:
-  pre-build:
+  PRE_BUILD:
     commands:
-      - echo 'Entered pre-build phase...'
-  build:
+      - echo 'Entered Pre-build phase...'
+  INSTALL:
+    commands:
+      -echo 'Entered Install phase...'
+  BUILD:
     commands:
       - echo 'Entered Build phase...'
-  post-build:
+  POST_BUILD:
     commands:
       - echo 'Entered Post-build phase...'
 artifacts:
